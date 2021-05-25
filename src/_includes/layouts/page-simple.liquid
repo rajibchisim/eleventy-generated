@@ -1,0 +1,23 @@
+{% layout 'base' %} 
+
+{% block 'maincontent' %}
+<div class="page-title sp" style="background-image: url(/assets/img/{{ backgroundImage }})">
+    <div class="container text-center">
+        <h2>{{ title }}</h2>
+        <p>{{ description }}</p>
+    </div>
+</div>
+
+<div class="about-area sp">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="about-content text-center">
+                    {% block 'content' %}{% endblock %}
+                    <a href="#" class="button">More about</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> 
+{% endblock %}

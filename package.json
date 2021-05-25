@@ -1,0 +1,21 @@
+{
+  "name": "elevently",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "eleventy --serve",
+    "build": "ELEVENTY_PRODUCTION=true eleventy && NODE_ENV=production"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@11ty/eleventy": "^0.12.1",
+    "liquidjs": "^9.25.0",
+    "netlify-cli": "^3.30.4"
+  },
+  "description": "",
+  "dependencies": {
+    "netlify-cms-app": "^2.15.11"
+  }
+}
