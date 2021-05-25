@@ -24,7 +24,7 @@ jobs:
       - name: Install dependencies & build
         run: |
           npm ci
-          npm run build          
+          npx @11ty/eleventy --pathprefix=eleventy-generated         
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
